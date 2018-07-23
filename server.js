@@ -19,7 +19,7 @@ app.use(express.static("public"));
 
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
 
-mongoose.connect(MONGODB_URI);
+mongoose.connect("mongodb://monuser:5555abcd@ds143451.mlab.com:43451/mongoscrapper");
 
 var db = mongoose.connection;
 
